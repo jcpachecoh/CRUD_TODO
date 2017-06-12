@@ -13,7 +13,7 @@ The program is mainly based on a Node Todo Tutorial on [scotch.io](http://scotch
 
 # Requirements
 
-* Node
+* Node JS alrreadu installed
 * PostgreSQL database running on port 5432. A database needs name todos has to be created.
 
 

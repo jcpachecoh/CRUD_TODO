@@ -21,6 +21,7 @@ angular.module('postgreDbApp.controllers', [])
 	$scope.logout = function(){
 		$scope.response = {};
 		$scope.userResponse={};
+		$scope.user={};
 	}
 
 	$scope.createUser = function(name,userName,password){
@@ -46,8 +47,11 @@ angular.module('postgreDbApp.controllers', [])
 
 		authUserService.authUser(username,pass)
 			.then(function(answer) {
-				let id_user=answer[1].id;
-				$scope.id_user=id_user;
+				console.log(answer.len);
+				if(answer.length==2){
+					let id_user=answer[1].id;
+					$scope.id_user=id_user;
+				}
 				$scope.response = answer;
 			},
 			function(error) {
