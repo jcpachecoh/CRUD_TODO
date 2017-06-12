@@ -26,6 +26,8 @@ The program is mainly based on a Node Todo Tutorial on [scotch.io](http://scotch
 * run code node server/models/database.js in root content
 * _node server.js_
 * Browse to _http://localhost:3090_
+* create a new user with the option "create user"
+* fill data nae, username,password
 
 
 ## Technologies used
